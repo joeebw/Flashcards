@@ -36,7 +36,7 @@ function InputForm({options ,setFlashCards}) {
         <div className='flex flex-col'>
           <label htmlFor='select'>Category</label>
           <select name="Select" id='select'
-            className='select select-bordered select-sm sm:w-96' 
+            className='select select-bordered select-sm sm:w-96 bg-white' 
             ref={selectOption}
           >
             {options.map(option => <option value={`${option.id}`} key={uuidv4()}>{option.name}</option>)}
@@ -47,7 +47,7 @@ function InputForm({options ,setFlashCards}) {
           <input type="number" 
             id='quantity' 
             name='quantity' 
-            className='input input-bordered input-xs text-base' 
+            className='input input-bordered input-xs text-base bg-white' 
             min={1} 
             max={10} 
             ref={quantityQuestions}

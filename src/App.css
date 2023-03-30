@@ -5,6 +5,8 @@ html {
 body {
   min-height: 100%;
   background-color: #5585b5;
+  color: black;
+  font-family: sans-serif;
 }
 
 .card-grid {
